@@ -2,29 +2,29 @@
     "_schema_name" : "tiled-volume-description",
     "_schema_version" : 1.0,
 
-    "## NOTES" : "Volume dimensions: x:  147455 px y: 81919 px z: 2758 (number of sections)",
-    "## NOTES" : "Resolution: 4.0 x 4.0 x 40.0",
-    "## NOTES" : "Tile size: 1024 x 1024 px",
+    "## NOTES" : "Volume dimensions: x: 147455 px y: 81919 px z: 2758 (number of sections)",
 
     "name" : "Bock Pilot CATMAID Tiles",
-    "format" : "jpg",
     "dtype" : "uint8",
     "view_origin_zyx" : [2239, 0, 0],
     "bounds_zyx" : [2758, 81919, 147455],
     "resolution_zyx" : [40.0, 4.0, 4.0],
-
-    "## NOTE" : "tile size depends on source, below",    
-    "##tile_shape_2d_yx" : [1024, 1024],
-    "tile_shape_2d_yx" : [4096, 4096],
     
     "## NOTE" : "Janelia internal filesystem, tiles are 4k x 4k",
     "tile_url_format" : "/nobackup/bock/eric/data/140514-fly500-misha/{z_index}/{z_index}.{x_index}.{y_index}.png",
+    "tile_shape_2d_yx" : [4096, 4096],
+    "format" : "png",
+    "is_rgb" : true,
 
     "## NOTE" : "Janelia internal server",
     "##tile_url_format" : "http://bock-s7.janelia.priv/tiles/special/fly500_v2-misha/0/{z_index}/{y_index}/{x_index}.jpg",
+    "##tile_shape_2d_yx" : [1024, 1024],
+    "##format" : "jpg",
 
     "## NOTE" : "This server can be accessed externally, but it's slower.",
     "##tile_url_format" : "http://neuropil.janelia.org/munich/tiles/special/fly500_v2-misha/0/{z_index}/{y_index}/{x_index}.jpg",
+    "##tile_shape_2d_yx" : [1024, 1024],
+    "##format" : "jpg",
     
     "username" : "berlin",
     "password" : "berlin",

@@ -1,0 +1,1 @@
+find . -name "*.lock" | xargs --delimiter='\n' rm

@@ -1,0 +1,4 @@
+if [[ -n `find . -name *.lock` ]];
+then
+  find . -name "*.lock" | xargs --delimiter='\n' ls $@
+fi

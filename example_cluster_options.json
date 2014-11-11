@@ -7,22 +7,23 @@
 	"workflow_type" : "PixelClassificationWorkflow",
 	"output_slot_id" : "BatchPredictionsUint8",
 
-	"###":"Performance Setttings",
+	"###":"Performance Settings",
 	"#sys_tmp_dir" : "/scratch/bergs",
 
 	"###":"Logging Settings",
 	"output_log_directory" : "logs/trial1",
 	
-	"###":"JANELIA CLUSTER CONFIGURATION",		
-	"#command_format" : "qsub -pe batch 8 -l short=true -N {task_name} -o {task_output_file} -j y -b y -cwd -V '/groups/flyem/proj/builds/cluster/src/ilastik-HEAD/ilastik_clusterized {task_args}'",
-	"#task_launch_server" : "login.int.janelia.org",
-	"#task_progress_update_command" : "./update_job_name {progress} > /dev/null",
-	"#server_working_directory" : "/home/bergs/clusterstuff/launchdir",
+	"##":"JANELIA CLUSTER CONFIGURATION",		
+    "server_working_directory" : "/nobackup/bock/ilastik/bock-pilot-cluster-options",
+	"command_format" : "qsub -pe batch 16 -l short=true -N {task_name} -o {task_output_file} -j y -b y -cwd -V '/nobackup/bock/ilastik/cluster-ilastik-build/ilastik_clusterized.sh {task_args}'",
+	"task_launch_server" : "login2.int.janelia.org",
+	"task_progress_update_command" : "./update_job_name {progress} > /dev/null",
+    "task_threadpool_size" : 16,
+	"task_total_ram_mb" : 128,
 
 	"#":"LOCAL DEBUGGING CONFIGURATION",	
-	"command_format" : "python /magnetic/workspace/ilastik-meta/ilastik/ilastik/workflows/pixelClassification/pixelClassificationClusterized.py {task_args}",
-	"task_launch_server" : "localhost",
-	"task_progress_update_command" : "echo {progress}",
-	"server_working_directory" : "/magnetic/bock_pilot/cluster_debug"
+	"#command_format" : "python /magnetic/workspace/ilastik-meta/ilastik/ilastik/workflows/pixelClassification/pixelClassificationClusterized.py {task_args}",
+	"#task_launch_server" : "localhost",
+	"#task_progress_update_command" : "echo {progress}",
+	"#server_working_directory" : "/nobackup/bock/ilastik"
 }
-

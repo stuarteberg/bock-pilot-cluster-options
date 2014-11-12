@@ -9,8 +9,8 @@
     "bounds_zyx" : [2758, 81919, 147455],
     "resolution_zyx" : [40.0, 4.0, 4.0],
 
-    "view_origin_zyx" : [2239, 60000, 60000],
-    "view_shape_zyx" : [519, 1000, 1000],
+    "view_origin_zyx" : [2239, 44000, 74000],
+    "view_shape_zyx" : [519, 20000, 20000],
     
     "## NOTE" : "Janelia internal filesystem, tiles are 4k x 4k",
     "#tile_url_format" : "/nobackup/bock/eric/data/140514-fly500-misha/{z_index}/{z_index}.{x_index}.{y_index}.png",

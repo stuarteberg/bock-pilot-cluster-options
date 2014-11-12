@@ -12,23 +12,23 @@
     ], 
     "dtype": "uint8", 
     "block_shape": [
-        260, 
-        500, 
-        500, 
+        519, 
+        2000, 
+        2000, 
         4
     ], 
     "dataset_root_dir": "./pixel_classification_blocks", 
     "block_file_name_format": "block-{roiString}.h5/predictions_uint8", 
     "view_origin": [
         0, 
-        60000, 
-        60000, 
+        44000, 
+        74000, 
         0
     ], 
     "view_shape": [
         519, 
-        1000, 
-        1000, 
+        20000, 
+        20000, 
         4
     ], 
     "drange": [
@@ -44,5 +44,5 @@
         4
     ], 
     "compression_opts": null, 
-    "hash_id": "5944822da6aa1dad50b90948978f48969a509a24"
+    "hash_id": "b6dd31805205bf640463ae9e7bfbbcb691ef4ea4"
 }

@@ -11,15 +11,15 @@
 	"#sys_tmp_dir" : "/scratch/bergs",
 
 	"###":"Logging Settings",
-	"output_log_directory" : "logs/trial1",
+	"output_log_directory" : "logs/trial2",
 	
 	"##":"JANELIA CLUSTER CONFIGURATION",		
     "server_working_directory" : "/nobackup/bock/ilastik/bock-pilot-cluster-options",
-	"command_format" : "qsub -pe batch 16 -l short=true -N {task_name} -o {task_output_file} -j y -b y -cwd -V '/nobackup/bock/ilastik/cluster-ilastik-build/ilastik_clusterized.sh {task_args}'",
+	"command_format" : "qsub -pe batch 16 -N {task_name} -o {task_output_file} -j y -b y -cwd -V '/nobackup/bock/ilastik/cluster-ilastik-build/ilastik_clusterized.sh {task_args}'",
 	"task_launch_server" : "login2.int.janelia.org",
 	"task_progress_update_command" : "./update_job_name {progress} > /dev/null",
     "task_threadpool_size" : 16,
-	"task_total_ram_mb" : 128,
+	"task_total_ram_mb" : 128000,
 
 	"#":"LOCAL DEBUGGING CONFIGURATION",	
 	"#command_format" : "python /magnetic/workspace/ilastik-meta/ilastik/ilastik/workflows/pixelClassification/pixelClassificationClusterized.py {task_args}",

@@ -21,14 +21,14 @@
     "block_file_name_format": "block-{roiString}.h5/predictions_uint8", 
     "view_origin": [
         0, 
-        44000, 
+        30000, 
         74000, 
         0
     ], 
     "view_shape": [
         519, 
-        20000, 
-        20000, 
+        2000, 
+        2000, 
         4
     ], 
     "drange": [

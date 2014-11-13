@@ -1,0 +1,65 @@
+{
+	"_schema_name": "blockwise-fileset-description",
+	"_schema_version": 1.0,
+	"name": "pixel_classification_results",
+	"format": "hdf5",
+	"axes": "txyzc",
+	"shape": 
+	[
+                1,
+                147455,
+                81919,
+		519,
+		1
+	],
+
+	"dtype": "uint8",
+	"block_shape": 
+	[
+                1,
+                2000,
+                2000,
+		519,
+		1
+	],
+        "sub_block_shape" : [1, 1000, 1000, 130, 1],
+
+	"dataset_root_dir": "./object_prediction_blocks",
+	"block_file_name_format": "block-{roiString}.h5/prediction_labels",
+	"view_origin": 
+	[
+	        0,
+		74000,
+                30000,
+	        0,
+		0
+	],
+
+	"view_shape": 
+	[
+                1,
+		2000,
+		2000,
+                519,
+		1
+	],
+
+	"drange": 
+	[
+		0,
+		255
+	],
+
+	"compression": "gzip",
+	"chunks": 
+	[
+                1,
+		100,
+		100,
+                10,
+		1
+	],
+
+	"compression_opts": null,
+	"hash_id": "b6dd31805205bf640463ae9e7bfbbcb691ef4ea4"
+}

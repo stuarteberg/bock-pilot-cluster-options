@@ -11,7 +11,7 @@
 	"#sys_tmp_dir" : "/scratch/bergs",
 
 	"###":"Logging Settings",
-	"output_log_directory" : "logs/trial2",
+	"output_log_directory" : "logs/trial6",
 	
 	"##":"JANELIA CLUSTER CONFIGURATION",		
     "server_working_directory" : "/nobackup/bock/ilastik/bock-pilot-cluster-options",
